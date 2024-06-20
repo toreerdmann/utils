@@ -75,17 +75,17 @@ mytheme = Theme(
 
 
 
-using PDFmerger
-# Usage:
-# df = (x=rand(500), y=rand(500), l=rand(["a", "b", "c", "d", "e", "f", "g", "h"], 500))
-# plt = data(df) * mapping(:x, :y, layout=:l)
-# pag = paginate(plt, layout = 1)
-function multipageplot(pag)
-    for i in 1:length(pag)
-        save("temp.pdf", draw(pag,i))
-        append_pdf!("allplots.pdf", "temp.pdf", cleanup=true)
-    end
-end
+# using PDFmerger
+# # Usage:
+# # df = (x=rand(500), y=rand(500), l=rand(["a", "b", "c", "d", "e", "f", "g", "h"], 500))
+# # plt = data(df) * mapping(:x, :y, layout=:l)
+# # pag = paginate(plt, layout = 1)
+# function multipageplot(pag)
+#     for i in 1:length(pag)
+#         save("temp.pdf", draw(pag,i))
+#         append_pdf!("allplots.pdf", "temp.pdf", cleanup=true)
+#     end
+# end
 
 
 ## can use this to make one large layout variable
